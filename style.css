@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #95e3e6;
+}
+.bottle{
+    position: absolute;
+    width: 150px;
+    height: 300px;
+    background-color: #e5f7fb;
+    bottom: 20%;
+    left: 40%;
+}
+.bottle::before{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: #fcffff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.bottle .logo{
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 80px;
+    background-color: #00d4da;
+}
+.bottle .logo::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 80px;
+    background-color: #00d4da;
+    transform: rotate(90deg);
+}
+.bottle::after{
+    content: "";
+    position: absolute;
+    top: -60px;
+    border-bottom: 60px solid white;
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    height: 0;
+    width: 60px;
+    z-index: -1;
+}
+.cap{
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    background: white;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -90px;
+}
+.cap::before{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 15px;
+    background: white;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.cap::after{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 35px;
+    background: white;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.sprayer{
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    background: white;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -170px;
+    border-radius: 20px 20px 0 0;
+}
+.sprayer::before{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 12px;
+    background: white;
+    top: 50%;
+    left: 95%;
+    transform: translateY(-30%);
+    border-radius: 0 50px 0 0;
+}
+.sprayer::after{
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 12px;
+    background: white;
+    top: 40px;
+    left: 180px;
+    transform: rotate(70deg);
+    border-radius: 10px;
+}
+.droplets{
+    position: absolute;
+    width: 10px;
+    height: 15px;
+    border-radius: 50%;
+    left: 200px;
+    box-shadow: 20px -30px 0 0 rgb(255 255 255 / 0.6),
+                40px -60px 0 0 rgb(255 255 255 / 0.6),
+                60px -90px 0 0 rgb(255 255 255 / 0.6),
+                60px -60px 0 0 rgb(255 255 255 / 0.6),
+                80px -60px 0 0 rgb(255 255 255 / 0.6),
+                100px -30px 0 0 rgb(255 255 255 / 0.6);
+}
